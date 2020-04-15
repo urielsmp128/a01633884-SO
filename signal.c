@@ -11,9 +11,13 @@ void processSignal(int s){
 }
 
 void dontkillSignal(int m){
-    printf("No me puedes matar %d\n", m);
+    if(m==15){
+        printf("No me puedes matar %d\n", m);
+    }
     
 }
+
+
 
 int main(){
     
