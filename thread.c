@@ -8,7 +8,7 @@ pthread_mutex_t mutex;
 
 void * hello(void *id){
     pthread_mutex_lock(&mutex);
-    printf("Hello world, \n");
+    printf("Hello world %ld, %d\n", (long)id, val);
     val += val;
     pthread_mutex_unlock(&mutex);
 };
